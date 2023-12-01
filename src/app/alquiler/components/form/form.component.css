@@ -1,0 +1,26 @@
+.formulario{
+  display: flex;
+  flex-flow: column;
+}
+.botones{
+  display: flex;
+  justify-content: flex-end;
+}
+mat-card{
+  background-color: gray;
+  width: 30vw;
+  display: flex;
+  flex-flow: column;
+}
+mat-label{
+  color: whitesmoke
+}
+form{
+  margin-top: 2em;
+}
+ ::ng-deep.mat-form-field-underline {
+  background-color: white !important;
+}
+::ng-deep.mat-form-field-ripple {
+ background-color: whitesmoke !important;
+}
