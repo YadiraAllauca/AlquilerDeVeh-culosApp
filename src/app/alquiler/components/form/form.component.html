@@ -1,0 +1,31 @@
+<mat-card>
+<mat-card-header>
+  <mat-card-title>REGISTRO DE ALQUILER</mat-card-title>
+</mat-card-header>
+  <form>
+    <div class="formulario">
+    <mat-form-field>
+      <!-- <input type="text" matInput  id="i" name="i" [(ngModel)]="alquiler._id"  style="visibility:hidden" /> -->
+      <mat-label>NOMBRE CLIENTE</mat-label>
+      <input type="text" matInput  id="cliente" name="cliente" [(ngModel)]="alquiler.cliente" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>NOMBRE EMPLEADO</mat-label>
+      <input type="text" matInput id="empleado" name="empleado" [(ngModel)]="alquiler.empleado" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>PLACA</mat-label>
+      <input type="text" matInput id="placa" name="placa" [(ngModel)]="alquiler.placa" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>DÍAS</mat-label>
+      <input type="number" min="1" matInput id="dias" name="dias" [(ngModel)]="alquiler.dias" />
+    </mat-form-field>
+    </div>
+    <div class="botones">
+      <button mat-raised-button type="button" (click)="save()">Grabar</button>
+           <button mat-button type="button" (click)="reload()">
+        Cancelar</button>
+    </div>
+  </form>
+</mat-card>
