@@ -30,7 +30,6 @@ git clone https://github.com/YadiraAllauca/AlquilerDeVehiculosApp.git
 npm install
 ```
 3. Check the operation of the application with:
-4. 
 ```bash
 npm start
 ```
